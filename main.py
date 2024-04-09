@@ -31,7 +31,7 @@ conn = mysql.connector.connect(
     host=args.host,
     user=args.user,
     password=password,
-    database=args.database
+    database=args.database,
 )
 
 cursor = conn.cursor(dictionary=True)

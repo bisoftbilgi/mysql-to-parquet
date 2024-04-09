@@ -6,6 +6,19 @@ It is inefficient to fetch all rows and convert to parquet, it uses a streaming 
 
 This approach is very memory and CPU effective when dealing with large tables. 
 
+## Installation
+
+``` 
+git clone https://github.com/bisoftbilgi/mysql-to-parquet.git
+
+cd mysql-to-parquet
+
+pip install -r requirements.txt
+
+```
+
+## Usage
+
 `usage: main.py [-h] --table-name TABLE_NAME [--target-directory TARGET_DIRECTORY] [--host HOST] [--user USER] [--password PASSWORD] [--port PORT] [--database DATABASE] [--where WHERE] [--ask-pass]`
 
 `--table-name or -t` is the name of the table to offload
