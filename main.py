@@ -59,10 +59,10 @@ for line in cursor:
     if i % 100 == 0 :
         df = pd.DataFrame(_list)
         if first:
-            df.to_csv(f'{args.target_directory}/{args.table_name}.csv', index=False, header=True,quoting=csv.QUOTE_MINIMAL,escapechar="\\")
+            df.to_csv(f'{args.target_directory}/{args.table_name}.csv', index=False, header=True,quoting=csv.QUOTE_NONNUMERIC,escapechar="\\")
             first = False
         else:
-            df.to_csv(f'{args.target_directory}/{args.table_name}.csv', mode='a', index=False, header=False,quoting=csv.QUOTE_MINIMAL,escapechar="\\")
+            df.to_csv(f'{args.target_directory}/{args.table_name}.csv', mode='a', index=False, header=False,quoting=csv.QUOTE_NONNUMERIC,escapechar="\\")
         _list=[]
 
 print(args.table_name,"Lines Exported",i )
