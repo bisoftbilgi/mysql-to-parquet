@@ -50,6 +50,24 @@ usage: main.py [-h] --table-name TABLE_NAME [--target-directory TARGET_DIRECTORY
 
 Alternatively user can use menu.sh bash script to guide export process. It uses whiptail library in linux systems for terminal screens.  
 
+![01-main_screen](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/8ba3ee47-0a7c-4e95-84c5-12ff167f116e)
+
+![02-hostname](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/54edd385-b6e5-47ee-a585-2ba02df70f2e)
+
+![03-user](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/0a701f77-cdba-4771-be55-8a41290ccac5)
+
+![04-password](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/bbbb4896-53de-4903-a923-7de3129176bf)
+
+![05-port](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/9dd81eb0-22e1-47cc-97d9-9d9bb900e737)
+
+![06-export-directory](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/f536f3f1-74ee-40e3-a1bd-d5cd9faa33b9)
+
+
+
+
+
+
+
 
 
 
