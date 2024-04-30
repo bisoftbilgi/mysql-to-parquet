@@ -19,7 +19,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-`usage: main.py [-h] --table-name TABLE_NAME [--target-directory TARGET_DIRECTORY] [--host HOST] [--user USER] [--password PASSWORD] [--port PORT] [--database DATABASE] [--where WHERE] [--ask-pass]`
+usage: main.py [-h] --table-name TABLE_NAME [--target-directory TARGET_DIRECTORY] [--host HOST] [--user USER] [--password PASSWORD] [--port PORT] [--database DATABASE] [--where WHERE] [--ask-pass]
+               [--analyze-table] [--progress] [--keep-csv]
 
 `--table-name or -t` is the name of the table to offload
 
@@ -38,6 +39,16 @@ pip install -r requirements.txt
 `--database or -D ` is the schema name in which the table exists
 
 `--where or -w ` is expression if any partial offload is required such as ` createAt < now() - interval 1 year `. There should be no table aliases for the target table, just column names and other expressions. 
+
+`--analyze-table` is to analyze table to predict number of rows in the MySQL table before export
+
+`--progress` output progress for menu.sh progress bar
+
+`--keep-csv` is to keep CSV file after convert CSV file to parquet
+
+## menu
+
+Alternatively user can use menu.sh bash script to guide export process. It uses whiptail library in linux systems for terminal screens.  
 
 
 
