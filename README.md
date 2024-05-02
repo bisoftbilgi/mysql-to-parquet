@@ -62,6 +62,10 @@ Alternatively user can use menu.sh bash script to guide export process. It uses 
 
 ![06-export-directory](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/f536f3f1-74ee-40e3-a1bd-d5cd9faa33b9)
 
+![07-select-database](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/6d90fe98-c389-4ab7-80b1-cf47e2bcf815)
+
+![08-select-tables](https://github.com/bisoftbilgi/mysql-to-parquet/assets/45390009/fcb7374b-d026-4074-a85d-5bfb217cb10b)
+
 
 
 
