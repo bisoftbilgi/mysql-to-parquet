@@ -39,7 +39,7 @@ do
     TBL=$(echo $item | sed 's/.\{1\}$//''' | sed 's/^.//''')
     mysql -u${MYSQL_USER} -h${MYSQL_HOST} -p${MYSQL_PASSWORD} -P${MYSQL_PORT} -D${DATABASE} -s -N -e"analyze table ${DATABASE}.${TBL}"
     TABLE_ROWS=$( mysql -u${MYSQL_USER} -h${MYSQL_HOST} -p${MYSQL_PASSWORD} -P${MYSQL_PORT} -D${DATABASE} -s -N -e"select table_rows from information_schema.tables where table_schema='${DATABASE}' and TABLE_NAME='${TBL}'" )
-    python main.py -H ${MYSQL_HOST}  -u${MYSQL_USER} -p ${MYSQL_PASSWORD} -t ${TBL} -D ${DATABASE} -p ${MYSQL_PASSWORD} \
+    python -u main.py -H ${MYSQL_HOST}  -u${MYSQL_USER} -p ${MYSQL_PASSWORD} -t ${TBL} -D ${DATABASE} -p ${MYSQL_PASSWORD} \
      -d ${TARGET_DIRECTORY} --progress | whiptail --gauge  "${TBL} with ${TABLE_ROWS} rows"  6 50 0
 done
 
