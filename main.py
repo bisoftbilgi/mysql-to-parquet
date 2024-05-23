@@ -89,6 +89,10 @@ for line in cursor:
             df.to_csv(f'{args.target_directory}/{args.table_name}.csv', mode='a', index=False, header=False,quoting=csv.QUOTE_NONNUMERIC,escapechar="\\")
         _list=[]
 
+if len(_list) > 0 :
+    df = pd.DataFrame(_list)
+    df.to_csv(f'{args.target_directory}/{args.table_name}.csv', mode='a', index=False, header=False,quoting=csv.QUOTE_NONNUMERIC,escapechar="\\")
+
 
 try:
     duckdb_conn.sql(f" copy (select * from read_csv('{args.target_directory}/{args.table_name}.csv',AUTO_DETECT=TRUE,HEADER=TRUE,PARALLEL=TRUE)) to '{args.target_directory}/{args.table_name}.parquet' (format 'PARQUET' )")
