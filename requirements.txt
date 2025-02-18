@@ -7,7 +7,7 @@ executing==2.0.1
 ipython==8.23.0
 jedi==0.19.1
 matplotlib-inline==0.1.6
-mysql-connector-python==8.3.0
+mysql-connector-python==9.1.0
 numpy==1.26.4
 packaging==24.0
 pandas==2.2.1
